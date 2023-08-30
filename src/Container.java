@@ -30,7 +30,7 @@ public class Container
      * @throws RuntimeException если индекс за границами хранилища
      */
     private void check(int index) {
-        if(index < 0 || index >= amount) {
+        if(index < 0 || index > amount) {
             throw new RuntimeException("Out of range");
         }
     }
